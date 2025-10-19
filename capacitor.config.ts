@@ -1,9 +1,13 @@
-import type { CapacitorConfig } from '@capacitor/cli';
+import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.yourcompany.myfitnessapp',
-  appName: 'MyFitnessApp',
-  webDir: 'build'
+  appName: 'My Fitness App',
+  webDir: 'build',
+  bundledWebRuntime: false,
+  server: {
+    androidScheme: 'https'
+  }
 };
 
 export default config;
